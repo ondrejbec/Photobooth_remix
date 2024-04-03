@@ -14,12 +14,12 @@ export default function Sidebar() {
           </li>
           <li className="p-2">
             <Button>
-              <Link to="/invoices">Invoices</Link>
+              <Link to="/invoices">useActionData</Link>
             </Button>
           </li>
           <li className="p-2">
             <Button>
-              <Link to="">Nastaveni</Link>
+              <Link to="/submit">useSubmit</Link>
             </Button>
           </li>
         </ul>

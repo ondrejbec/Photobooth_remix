@@ -21,17 +21,8 @@ export default function Index() {
       <main className="bg-slate-500 flex-1 p-4">
         <div className="flex flex-row p-4">
           <div className="w-1/2">
-            <h1 className="text-white">Test form</h1>
-            <Form method="post" action="/signup">
-              <input name="email" />
-            </Form>
-          </div>
-          <div className="w-2/2">
-          <h1 className="text-white">Test form</h1>
-          <Form method="post" action="/signup">
-            <input name="email" />
-          </Form>
-
+            <h1 className="text-white text-3xl font-semibold">Remix</h1>
+            <h2 className="text-white text-xl font-semibold">Links</h2>
           </div>
         </div>
       </main>

@@ -12,11 +12,15 @@ export const meta: MetaFunction = () => {
 
 export default function Photos() {
   return (
-    <div className="bg-slate-500 flex flex-row p-10 gap-2 h-full">
-    <Webcam/>
-    <div className="p-4 text-white text-2xl">
-      <h1>Foto bunka</h1>
-    </div>
+    <div className="bg-slate-500 flex flex-col p-10 gap-2 h-full p-4">
+      <div >
+       <h1 className="text-white text-3xl font-semibold">Foto bunka</h1>
+       <p className="text-white text-sm"> Test npm balicku: https://www.npmjs.com/package/react-webcam </p>
+      </div>
+    <Webcam width={600} height={600}/>
+    
+      
+    
     </div>
   );
 }
