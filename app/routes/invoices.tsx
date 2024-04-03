@@ -2,8 +2,6 @@ import type { MetaFunction, ActionFunctionArgs } from "@remix-run/node";
 import { json } from "@remix-run/node"; // or cloudflare/deno
 import { Form, useActionData } from "@remix-run/react";
 
-
-
 export const meta: MetaFunction = () => {
   return [
     { title: "New Remix App" },
@@ -29,9 +27,6 @@ export default function Invoices() {
     <div className="flex flex-row">
       <Form className="flex flex-col gap-2"method="post">
         <input className="w-48" type="text" name="visitorsName" />
-        
-        <div className="text-white pt-2 flex flex-col">
-        </div>
       </Form>
       <div className="px-4 text-white">
       Jmeno: {data ? data.name : "Waiting name..."}
