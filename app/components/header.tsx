@@ -5,7 +5,7 @@ export default function Header () {
     return (
         <header className="w-full flex flex-row justify-between bg-primary text-white p-4 items-center">
             <div className="text-xl">
-            PHOTOBOOTH.cz
+            Remix
             </div>
             <div className="p-2">
                 <Avatar>

@@ -14,7 +14,7 @@ export default function Sidebar() {
           </li>
           <li className="p-2">
             <Button>
-              <Link to="">Galerie</Link>
+              <Link to="/invoices">Invoices</Link>
             </Button>
           </li>
           <li className="p-2">
