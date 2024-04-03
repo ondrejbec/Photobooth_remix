@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import  Sidebar  from "~/components/sidebar"
 import Webcam from "react-webcam";
+import { Form, useNavigation } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -8,6 +9,7 @@ export const meta: MetaFunction = () => {
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
+
 
 
 export default function Index() {
@@ -20,7 +22,12 @@ export default function Index() {
           <div className="w-1/2">
             <Webcam/>
           </div>
-          <div className="w-2/2">
+          <div className="w-2/2 p-4">
+          <h1>Test form</h1>
+          <Form method="post" action="/signup">
+            <input name="email" />
+          </Form>
+
           </div>
         </div>
       </main>
